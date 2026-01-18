@@ -1,16 +1,17 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header({ darkMode, toggleDarkMode }) {
   return (
     <header className="header">
       <div className="header-content">
-        <a href="/" className="logo">alexleu</a>
+        <Link to="/" className="logo">alexleu</Link>
         <nav className="nav">
           <a href="#start">Start Here</a>
           <a href="#writing">Writing</a>
           <a href="#speaking">Speaking</a>
           <a href="#prototyping">Prototyping</a>
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
           <button className="icon-btn" aria-label="Search">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="8"></circle>

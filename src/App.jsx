@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import BlogList from './components/BlogList';
+import Home from './pages/Home';
+import About from './pages/About';
 import './App.css';
 
 function App() {
@@ -28,11 +29,15 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Hero />
-      <BlogList />
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
