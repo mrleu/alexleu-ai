@@ -1,8 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Hero.css';
 
 function Hero() {
   const [email, setEmail] = useState('');
+  const [roleIndex, setRoleIndex] = useState(0);
+
+  const roles = [
+    'Data Scientist',
+    'AI Engineer',
+    'ML Engineer'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRoleIndex((prev) => (prev + 1) % roles.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,7 +28,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Hi, I'm Alex Leu.</h1>
+        <h1>Hi, I'm Alex Leu, a <span className="rotating-role">{roles[roleIndex]}</span></h1>
 
         <p className="intro">
           Welcome to my personal site, created with AI tools.
