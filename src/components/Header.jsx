@@ -7,8 +7,8 @@ function Header({ darkMode, toggleDarkMode }) {
     <header className="header">
       <div className="header-content">
         <div className="logo-container">
-          <Link to="/" className="logo">alexleu</Link>
           <img src={numbersoulLogo} alt="numbersoul" className="numbersoul-logo" />
+          <Link to="/" className="logo">alexleu</Link>
         </div>
         <nav className="nav">
           <Link to="/about" className="about-link">
