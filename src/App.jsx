@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/alexleu-ai/">
       <div className="app">
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
