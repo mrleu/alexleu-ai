@@ -45,7 +45,7 @@ function Hero() {
         <h1>Hi, I'm Alex Leu, {getArticle(roles[displayIndex])} <span key={displayIndex} className={`rotating-role ${isRotating ? 'rotating' : ''}`}>{roles[displayIndex]}</span></h1>
 
         <p className="intro">
-          Welcome to my personal site, created with AI tools.
+          Welcome to my site, powered by AI fuels.
         </p>
 
         <ul className="activities">
