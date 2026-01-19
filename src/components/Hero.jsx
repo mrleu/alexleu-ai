@@ -21,13 +21,10 @@ function Hero() {
 
         <ul className="activities">
           <li>
-            <a href="#about">Learn more about me</a>
+            <a href="about">Learn more about me</a>
           </li>
           <li>
-            <a href="#blog">Read my blog</a>
-          </li>
-          <li>
-            <a href="#projects">Check out my projects</a>
+            <a href="projects">Check out my projects</a>
           </li>
         </ul>
 
