@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 import './Header.css';
+import numbersoulLogo from '../assets/numbersoul.png';
 
 function Header({ darkMode, toggleDarkMode }) {
   return (
     <header className="header">
       <div className="header-content">
-        <Link to="/" className="logo">alexleu</Link>
+        <div className="logo-container">
+          <Link to="/" className="logo">alexleu</Link>
+          <img src={numbersoulLogo} alt="numbersoul" className="numbersoul-logo" />
+        </div>
         <nav className="nav">
           <Link to="/about" className="about-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
