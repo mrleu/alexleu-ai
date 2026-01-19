@@ -4,6 +4,8 @@ import './Hero.css';
 function Hero() {
   const [email, setEmail] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
+  const [displayIndex, setDisplayIndex] = useState(0);
+  const [isRotating, setIsRotating] = useState(false);
 
   const roles = [
     'Data Scientist',
@@ -13,7 +15,14 @@ function Hero() {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      setIsRotating(true);
       setRoleIndex((prev) => (prev + 1) % roles.length);
+      
+      // Change text after animation completes (600ms)
+      setTimeout(() => {
+        setDisplayIndex((prev) => (prev + 1) % roles.length);
+        setIsRotating(false);
+      }, 300);
     }, 3000);
 
     return () => clearInterval(interval);
@@ -28,7 +37,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Hi, I'm Alex Leu, a <span className="rotating-role">{roles[roleIndex]}</span></h1>
+        <h1>Hi, I'm Alex Leu, a <span key={displayIndex} className={`rotating-role ${isRotating ? 'rotating' : ''}`}>{roles[displayIndex]}</span></h1>
 
         <p className="intro">
           Welcome to my personal site, created with AI tools.
