@@ -34,6 +34,7 @@ function App() {
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/alexleu-ai/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
