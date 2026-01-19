@@ -30,14 +30,30 @@
 }
 
 .nav a {
-  color: var(--text-secondary);
+  color: #fff;
   font-size: 1rem;
   transition: color 0.2s;
+  padding: 0.6rem 1.5rem;
+  background: var(--peach-color);
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .nav a:hover {
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
+  opacity: 0.9;
+}
+
+.about-link svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
 }
 
 .icon-btn {

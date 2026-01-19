@@ -7,12 +7,14 @@ import Projects from './pages/Projects';
 import './App.css';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const savedMode = localStorage.getItem('darkMode');
     if (savedMode) {
       setDarkMode(savedMode === 'true');
+    } else {
+      setDarkMode(true);
     }
   }, []);
 

@@ -5,25 +5,35 @@
   line-height: 1.6;
   font-weight: 400;
 
-  /* Nord Theme - Light Mode (Snow Storm) */
-  --bg-color: #eceff4;
-  --text-color: #2e3440;
-  --text-secondary: #4c566a;
-  --link-color: #5e81ac;
-  --border-color: #d8dee9;
-  --button-color: #88c0d0;
-  --button-hover: #81a1c1;
+  /* Catppuccin Latte - Light Mode */
+  --bg-color: #eff1f5;
+  --text-color: #5c5f77;
+  --text-secondary: #6c6f85;
+  --link-color: #ea76cb;
+  --border-color: #bcc0cc;
+  --button-color: #1e66f5;
+  --button-hover: #1e66f5;
+  --accent-color: #ea76cb;
+  --peach-color: #fe640b;
+  --surface-0: #f5f5f5;
+  --surface-1: #eff1f5;
+  --surface-2: #e6e9ef;
 }
 
 :root.dark {
-  /* Nord Theme - Dark Mode (Polar Night) */
-  --bg-color: #2e3440;
-  --text-color: #eceff4;
-  --text-secondary: #d8dee9;
-  --link-color: #88c0d0;
-  --border-color: #4c566a;
-  --button-color: #88c0d0;
-  --button-hover: #8fbcbb;
+  /* Catppuccin Mocha - Dark Mode */
+  --bg-color: #1e1e2e;
+  --text-color: #b4befe;
+  --text-secondary: #a6adc8;
+  --link-color: #f5c2e7;
+  --border-color: #45475a;
+  --button-color: #89b4fa;
+  --button-hover: #a6e3a1;
+  --accent-color: #f5c2e7;
+  --peach-color: #f5a97f;
+  --surface-0: #313244;
+  --surface-1: #45475a;
+  --surface-2: #585b70;
 }
 
 * {

@@ -7,7 +7,13 @@ function Header({ darkMode, toggleDarkMode }) {
       <div className="header-content">
         <Link to="/" className="logo">alexleu</Link>
         <nav className="nav">
-          <Link to="/about">About Me</Link>
+          <Link to="/about" className="about-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M12 14c-6 0-8 3-8 3v6h16v-6s-2-3-8-3z"></path>
+            </svg>
+            About Me
+          </Link>
           <button className="icon-btn dark-mode-toggle" onClick={toggleDarkMode} aria-label="Toggle dark mode">
             {darkMode ? (
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
