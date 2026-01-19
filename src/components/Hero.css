@@ -88,8 +88,8 @@
   padding: 0.9rem 2rem;
   font-size: 1rem;
   font-weight: 500;
-  color: white;
-  background-color: #3498db;
+  color: #2e3440;
+  background-color: var(--button-color);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -98,7 +98,7 @@
 }
 
 .submit-btn:hover {
-  background-color: #2980b9;
+  background-color: var(--button-hover);
 }
 
 @media (max-width: 768px) {
