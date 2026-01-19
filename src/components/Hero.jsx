@@ -13,25 +13,21 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Hi, I'm Eugene Yan, an ML engineer.</h1>
+        <h1>Hi, I'm Alex Leu.</h1>
 
         <p className="intro">
-          I build recommendation systems and AI-powered experiences that serve customers at scale.
-          Currently, I'm a Principal Applied Scientist at Amazon. Outside of work, I also...
+          Welcome to my personal site, created with AI tools.
         </p>
 
         <ul className="activities">
           <li>
-            <a href="#write">Write</a> and <a href="#speak">speak</a> about recommendation systems, AI-powered product, and engineering.
+            <a href="#about">Learn more about me</a>
           </li>
           <li>
-            <a href="#prototype">Prototype</a> apps like <a href="#reading">AI Reading Club</a>, <a href="#aligneval">AlignEval</a>, <a href="#obsidian">Obsidian Copilot</a>, <a href="#coach">AI Coach</a>, and <a href="#more">more</a>.
+            <a href="#blog">Read my blog</a>
           </li>
           <li>
-            Teach how to apply ML/LLMs effectively at <a href="#applyingml">ApplyingML.com</a> & <a href="#appliedllms">Applied-LLMs.org</a>.
-          </li>
-          <li>
-            <a href="#send">Send</a> a newsletter on RecSys, LLMs/AI, and what I'm learning to 11,800+ readers.
+            <a href="#projects">Check out my projects</a>
           </li>
         </ul>
 
