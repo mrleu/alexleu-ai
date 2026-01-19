@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 function Hero() {
@@ -49,7 +50,7 @@ function Hero() {
 
         <ul className="activities">
           <li>
-            <a href="about">Learn more about me</a>
+            <Link to="/about" className="about-link">Learn more about me</Link>
           </li>
           <li>
             <a href="projects">Check out my projects</a>
