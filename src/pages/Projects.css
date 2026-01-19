@@ -1,0 +1,83 @@
+.projects {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--text-primary, #000);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  padding: 25px;
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 8px;
+  background: var(--card-bg, #fff);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: var(--accent-color, #0066cc);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--text-primary, #000);
+}
+
+.project-card p {
+  color: var(--text-secondary, #666);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--tag-bg, #f0f0f0);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #666);
+}
+
+.project-link {
+  color: var(--accent-color, #0066cc);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--accent-hover, #0052a3);
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 40px 20px;
+  }
+
+  .projects-content h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
