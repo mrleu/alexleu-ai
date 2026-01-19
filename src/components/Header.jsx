@@ -7,11 +7,7 @@ function Header({ darkMode, toggleDarkMode }) {
       <div className="header-content">
         <Link to="/" className="logo">alexleu</Link>
         <nav className="nav">
-          <a href="#start">Start Here</a>
-          <a href="#writing">Writing</a>
-          <a href="#speaking">Speaking</a>
-          <a href="#prototyping">Prototyping</a>
-          <Link to="/about">About</Link>
+          <Link to="/about">About Me</Link>
           <button className="icon-btn" aria-label="Search">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="8"></circle>
