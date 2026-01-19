@@ -34,10 +34,14 @@ function Hero() {
     setEmail('');
   };
 
+  const getArticle = (role) => {
+    return role.startsWith('A') ? 'an' : 'a';
+  };
+
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Hi, I'm Alex Leu, a <span key={displayIndex} className={`rotating-role ${isRotating ? 'rotating' : ''}`}>{roles[displayIndex]}</span></h1>
+        <h1>Hi, I'm Alex Leu, {getArticle(roles[displayIndex])} <span key={displayIndex} className={`rotating-role ${isRotating ? 'rotating' : ''}`}>{roles[displayIndex]}</span></h1>
 
         <p className="intro">
           Welcome to my personal site, created with AI tools.
