@@ -8,7 +8,7 @@ function BlogList() {
   return (
     <section className="blog-list">
       <div className="blog-list-content">
-        <h2>Welcome to Alex Leu AI Page</h2>
+        <h2>Welcome to AI Page</h2>
         <ul className="posts">
           {posts.map((post, index) => (
             <li key={index} className="post-item">
