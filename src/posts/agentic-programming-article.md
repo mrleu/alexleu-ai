@@ -1,4 +1,4 @@
-# The Rise of Agentic Programming: When Code Writes Itself
+# The Rise of Agentic Programming: When Code Writes Itself!
 
 I remember the exact moment I realized programming was about to change forever. I was staring at a screen full of boilerplate code, mindlessly copying patterns I'd written a thousand times before, when I thought: "There has to be a better way."
 
