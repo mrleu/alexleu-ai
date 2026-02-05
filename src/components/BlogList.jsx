@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import './BlogList.css';
 
 function BlogList() {
   const posts = [
-    { date: '14 Dec 2025', title: '2025 Year in Review' },
+    { date: '4 Feb 2026', title: 'The Rise of Agentic Programming: When Code Writes Itself', slug: 'agentic-programming-article' },
+    { date: '14 Dec 2025', title: '2025 Year in Review', slug: 'year-review' },
   ];
 
   return (
@@ -14,9 +16,9 @@ function BlogList() {
             <li key={index} className="post-item">
               <span className="post-date">{post.date}</span>
               <span className="post-separator">·</span>
-              <a href={`#post-${index}`} className="post-title">
+              <Link to={`/articles/${post.slug}`} className="post-title">
                 {post.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
