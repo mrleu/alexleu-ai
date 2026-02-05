@@ -1,4 +1,4 @@
-# ALEX LEU's Site
+# ALEX LEU's Agentic AI Site
 
 This is ALEX LEU's personal website created through AI tools.
 
